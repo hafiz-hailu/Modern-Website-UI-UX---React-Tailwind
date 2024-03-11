@@ -18,9 +18,10 @@ import {
 const App = () => (
   <div className="bg-primary w-full overflow-hidden">
     {/* Navbar */}
-    <Navbar />
     <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-      <div className={`${styles.boxWidth}`}>NAVBAR</div>
+      <div className={`${styles.boxWidth}`}>
+        <Navbar />
+      </div>
     </div>
 
     {/* Hero */}
@@ -32,7 +33,16 @@ const App = () => (
 
     {/* Multiple sections */}
     <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
-      <div className={`${styles.boxWidth}`}></div>
+      <div className={`${styles.boxWidth}`}>
+        <Stats />
+        <Business />
+        <Billing />
+        <CarDeal />
+        <Testimonial />
+        <Clients />
+        <CTA />
+        <Footer />
+      </div>
     </div>
   </div>
 );
